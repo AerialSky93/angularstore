@@ -1,0 +1,16 @@
+<p>
+  add-product works!
+</p>
+
+
+<br>
+  <div class = "form-group">
+    <form (ngSubmit)="createProduct()">
+      <label>ProductName</label>
+      <input type="text" name="ProductName" [(ngModel)] = "product.ProductName">
+      <br>
+      <label>ProductDescription</label>
+      <input type="text" name="ProductDescription" [(ngModel)] = "product.ProductDescription">
+      <button type ="submit">Create</button>
+    </form>
+  </div>
