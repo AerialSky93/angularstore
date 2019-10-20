@@ -4,13 +4,13 @@
 
 
 <br>
-  <div class = "form-group">
+  <div class = "form-group product">
     <form (ngSubmit)="createProduct()">
       <label>ProductName</label>
-      <input type="text" name="ProductName" [(ngModel)] = "product.ProductName">
+      <input type="text" class="productname" name="ProductName" [(ngModel)] = "product.ProductName">
       <br>
       <label>ProductDescription</label>
-      <input type="text" name="ProductDescription" [(ngModel)] = "product.ProductDescription">
+      <input type="text" class="productdescription" name="ProductDescription" [(ngModel)] = "product.ProductDescription">
       <button type ="submit">Create</button>
     </form>
   </div>

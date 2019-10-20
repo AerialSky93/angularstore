@@ -25,4 +25,15 @@ export class ProductconnectService {
     return this.http.post<Product>('http://localhost:40085/api/products2', product)
   }
 
+  public editproduct (product: Product): Observable<Product> { 
+
+    return this.http.put<Product>('http://localhost:40085/api/products2/2', product)
+  }
+
+  public getproduct(){ 
+
+    return this.http.get('http://localhost:40085/api/products2/2')
+  }
+
+
 }

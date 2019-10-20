@@ -26,7 +26,7 @@ export class AddProductComponent implements OnInit {
     this.productconnectService.addProduct(this.product).subscribe((data: any)=>{
       console.log(data)
       this.product = data
-    }
+    })
   }
 }
 
